@@ -1,5 +1,5 @@
 respuesta = """
-hola cambia numeros por letras
+hola man cambia numeros por letras
 elije un numero que quieras cambiar: 
 
 """ 
