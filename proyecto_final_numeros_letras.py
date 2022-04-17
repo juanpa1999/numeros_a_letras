@@ -1,7 +1,7 @@
-respuesta = " hola man cambia numeros por letras elije un numero que quieras cambiar: "
-numero = int(input(respuesta))
+numero = int(input(" hola man cambia numeros por letras elije un numero que quieras cambiar: "))
 cosciente = numero
 def run():
+    result = []
     resultado2 = numero
     cosciente = int(resultado2 % 26)
     letras_y_numeros = {}
@@ -11,8 +11,7 @@ def run():
             letras_y_numeros[i] = []
         letras_y_numeros[i].append(letras)
     for i in letras_y_numeros[cosciente]:
-        print(i)
-        return(i)
+        result.append(i)
     while resultado2 > 27:
         resultado2 = int(resultado2 / 26 - 1)
         cosciente = int(resultado2 % 26)
@@ -23,9 +22,13 @@ def run():
                 letras_y_numeros[i] = []
             letras_y_numeros[i].append(letras)
         for i in letras_y_numeros[cosciente]:
-            print(i)
-            return(i)
-        
+            result.append(i)
+    result = str(result)
+    result = result[::-1]
+    specialchars = "[]'' ,"
+    for e in specialchars:
+        result = result.replace(e, '')
+    print(result)
 
 
 if __name__ == '__main__':
