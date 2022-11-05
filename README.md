@@ -1,3 +1,2 @@
-# numeros_a_letras
-el documento que funciona proyecto_final_numeros_letras.py
-el resto son apuntes de intentos fallidos que no los utilice en git ya que no tenia conocimiento de la pltaforma por eso cree diferentes archivos para crear diferentes versiones
+# Numbers_to_letters
+The real document is the one called proyecto_final_numeros_letras.py as in that moment I did not have enough experience working with a version contoler like git
